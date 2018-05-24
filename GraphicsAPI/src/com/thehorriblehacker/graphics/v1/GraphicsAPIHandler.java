@@ -48,5 +48,14 @@ public class GraphicsAPIHandler {
 	public static Graphics2D apiGetGraphics() {
 		return g;
 	}
+
+	private static void apiClearArrays() {
+		for(int i=0; i < verticesX.length; i++) {
+			verticesX[i] = 0;
+		}
+		for(int i=0; i < verticesY.length; i++) {
+			verticesY[i] = 0;
+		}
+	}
 	
 }
